@@ -171,7 +171,7 @@ button:hover {
     }
 }
 
-.fullscreen {
+.step fullscreen {
     position: fixed;
     top: 0;
     left: 0;
