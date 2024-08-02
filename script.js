@@ -48,18 +48,10 @@ function showLetter() {
     document.getElementById('step3').style.display = 'block';
 }
 
-function showStep4() {
-    // Hide other steps
-    document.getElementById('step1').style.display = 'none';
-    document.getElementById('step2').style.display = 'none';
+function showThankYouPage() {
     document.getElementById('step3').style.display = 'none';
-
-    // Show step 4
-    document.getElementById('step4').classList.add('show');
+    document.getElementById('step4').style.display = 'block';
 }
-
-// Call this function when you want to show step 4
-showStep4();
 
 
 // Deteksi klik pertama dari pengguna untuk memulai musik
