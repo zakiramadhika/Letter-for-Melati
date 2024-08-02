@@ -50,7 +50,7 @@ function showLetter() {
 
 function showThankYouPage() {
     document.getElementById('step3').style.display = 'none';
-    document.getElementById('step4').style.display = 'flex';
+    document.getElementById('step4').style.display = 'block';
 }
 
 // Deteksi klik pertama dari pengguna untuk memulai musik
