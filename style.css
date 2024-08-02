@@ -177,7 +177,7 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/images/Dekstop-3.png');
+    background-image: url('/assets/images/Desktop-3.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -187,7 +187,12 @@ button:hover {
     text-align: center;
     padding: 100px;
     box-sizing: border-box;
-    z-index: 9999; /* Pastikan z-index cukup tinggi */
+    z-index: 9999; /* Pastikan elemen ini berada di atas */
+    display: none; /* Sembunyikan default, nanti muncul dengan JavaScript */
+}
+
+.fullscreen.active {
+    display: flex; /* Tampilkan saat diperlukan */
 }
 
 .thank-you-text {
