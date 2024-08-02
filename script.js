@@ -53,8 +53,15 @@ function showThankYouPage() {
     document.getElementById('step4').style.display = 'block';
 }
 
-// Play background music
-window.onload = function() {
-    const backgroundMusic = document.getElementById('background-music');
-    backgroundMusic.play().catch(error => console.log('Music play prevented by browser:', error));
-};
+// Deteksi klik pertama dari pengguna untuk memulai musik
+window.addEventListener('click', () => {
+    const audio = document.getElementById('background-music');
+    if (audio) {
+        audio.play().then(() => {
+            // Audio mulai diputar
+        }).catch(error => {
+            // Jika ada kesalahan, log error
+            console.error('Error playing audio:', error);
+        });
+    }
+}, { once: true }); // Event listener hanya dijalankan sekali
