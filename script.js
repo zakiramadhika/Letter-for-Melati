@@ -12,6 +12,8 @@ window.addEventListener('click', () => {
     }
 }, { once: true }); // Event listener hanya dijalankan sekali
 
+// script.js
+
 function calculateCountdown() {
     const startDate = new Date('2024-02-01T00:00:00');
     const now = new Date();
@@ -64,4 +66,3 @@ function showThankYouPage() {
     document.getElementById('step3').style.display = 'none';
     document.getElementById('step4').style.display = 'block';
 }
-
