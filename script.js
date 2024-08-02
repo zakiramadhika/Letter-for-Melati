@@ -47,6 +47,11 @@ function showLetter() {
     document.getElementById('step2').style.display = 'none';
     document.getElementById('step3').style.display = 'block';
 }
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Logika untuk menampilkan elemen dengan gambar Desktop-3.png
+    const fullscreenElement = document.querySelector('.fullscreen');
+    fullscreenElement.classList.add('active');
+});
 
 function showThankYouPage() {
     document.getElementById('step3').style.display = 'none';
