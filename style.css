@@ -171,10 +171,6 @@ button:hover {
     }
 }
 
-.step {
-    position: relative;
-    /* Other common styles for steps */
-}
 
 .fullscreen {
     position: absolute;
@@ -197,7 +193,7 @@ button:hover {
 
 #step4.show {
     display: flex; /* Make it visible */
-    z-index: 10; /* Ensure it's in front of other steps */
+    z-index: 20; /* Ensure it's in front of other steps */
 }
 
 .thank-you-text {
