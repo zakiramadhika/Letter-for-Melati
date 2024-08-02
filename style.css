@@ -187,6 +187,7 @@ button:hover {
     text-align: center;
     padding: 100px;
     box-sizing: border-box;
+    z-index: 9999; /* Pastikan z-index cukup tinggi */
 }
 
 .thank-you-text {
