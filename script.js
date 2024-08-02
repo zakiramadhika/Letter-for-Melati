@@ -53,7 +53,6 @@ function showThankYouPage() {
     document.getElementById('step4').style.display = 'block';
 }
 
-
 // Deteksi klik pertama dari pengguna untuk memulai musik
 window.addEventListener('click', () => {
     const audio = document.getElementById('background-music');
